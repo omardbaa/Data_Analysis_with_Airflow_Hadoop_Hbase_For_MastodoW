@@ -75,7 +75,42 @@ Dans l'interface web Apache Airflow, activez le DAG, surveillez la progression d
 - 📄 Mettez à jour la documentation des règles d'accès, y compris les détails sur les rôles, les autorisations, les demandes d'accès et les procédures d'octroi ou de révocation d'accès.
 
 ### Phase 10: Planification et Conformité
-- ⏰ Assurez-vous que les DAGs sont planifiés à des intervalles appropriés pour le rafraîchissement des données. Mettez à jour le journal de traitement des données pour garantir la conformité au RGPD en documentant toutes les données personnelles de Mastodon et comment elles sont traitées.
+## Conformité RGPD dans le Pipeline de Données Mastodon
+
+Pour garantir la conformité au RGPD, notre pipeline de données suit ces étapes essentielles :
+
+1. **Anonymisation des Données :**
+   - Suppression ou hachage des données personnelles inutiles.
+
+2. **Minimisation des Données :**
+   - Conservation uniquement des données nécessaires à l'analyse.
+
+3. **Sécurité :**
+   - Sécurisation des systèmes de stockage HDFS et HBase.
+
+4. **Gestion du Data Lake :**
+   - Suppression des données une fois traitées pour éviter la rétention excessive.
+
+5. **Évaluation de l'Impact sur la Protection des Données (AIPD) :**
+   - Identification et atténuation des risques pour la vie privée.
+
+6. **Consentement :**
+   - Obtention d'un consentement explicite lorsque requis.
+
+7. **Droits des Personnes Concernées :**
+   - Possibilité d'accéder, corriger ou supprimer leurs données.
+
+8. **Documentation et Conformité :**
+   - Tenue de registres détaillés pour la transparence.
+
+9. **Audits et Vérifications :**
+   - Contrôles réguliers de conformité aux réglementations RGPD.
+
+10. **Gestion des Violations de Données :**
+    - Protocole de réponse aux violations conforme au RGPD.
+
+Ces mesures démontrent notre engagement envers la conformité au RGPD, la protection des données personnelles et le respect des droits à la vie privée.
+
 
 ## Licence
 
